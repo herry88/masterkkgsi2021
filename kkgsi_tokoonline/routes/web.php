@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//bagian mastertemplate belajar
+Route::get('master',[App\Http\Controllers\BelajarController::class, 'index']);
