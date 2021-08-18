@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 //
-Route::get('belajar', function () {
-    return '<h2>Ini berasalh dari RouteBaru</h2>';
-});
+// Route::get('/belajar/{nama}', function ($nama) {
+//     return 'sedangbelajar '.$nama;
+// });
+
+// Route::get('/user/{id}', function ($id) {
+//     return 'User '.$id;
+// });
