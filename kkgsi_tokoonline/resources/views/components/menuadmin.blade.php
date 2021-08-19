@@ -1,27 +1,18 @@
 <ul id="slide-out" class="sidenav">
     <li>
         <ul class="collapsible">
-            <li class="small-cap"><span class="hide-menu">PERSONAL</span></li>
+            <li class="small-cap"><span class="hide-menu">Menu Admin</span></li>
             <li>
-                <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">dashboard</i><span class="hide-menu"> Dashboard</span></a>
-                <div class="collapsible-body">
-                    <ul>
-                        <li><a href="index.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-1</span></a></li>
-                        <li><a href="index2.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-2</span></a></li>
-                        <li><a href="index3.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-3</span></a></li>
-                        <li><a href="index4.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-4</span></a></li>
-                    </ul>
-                </div>
+                <a href="#" class="collapsible-header"><i class="material-icons">dashboard</i><span> Dashboard</span></a>
+               
             </li>
              <li>
-                <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">equalizer</i><span class="hide-menu"> Sidebar Types </span></a>
+                <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">equalizer</i><span class="hide-menu"> Category </span></a>
                 <div class="collapsible-body">
                     <ul>
-                        <li><a href="sidebar-type-minisidebar.html"><i class="material-icons">photo_size_select_small</i><span class="hide-menu">Minisidebar</span></a></li>
-                        <li><a href="sidebar-type-iconbar.html"><i class="material-icons">picture_in_picture</i><span class="hide-menu">Icon Sidebar</span></a></li>
-                        <li><a href="sidebar-type-overlay.html"><i class="material-icons">low_priority</i><span class="hide-menu">Overlay Sidebar</span></a></li>
-                        <li><a href="sidebar-type-fullsidebar.html"><i class="material-icons">present_to_all</i><span class="hide-menu">Full Sidebar</span></a></li>
-                        <li><a href="../horizontal/index.html"><i class="material-icons">power_input</i><span class="hide-menu">Horizontal Sidebar</span></a></li>
+                        <li><a href="{{route('categories.index') }}"><i class="material-icons">photo_size_select_small</i><span class="hide-menu">Data Category</span></a></li>
+                        <li><a href="{{route('sub-categories.index')}}"><i class="material-icons">picture_in_picture</i><span class="hide-menu">SubCategory</span></a></li>
+                        
                     </ul>
                 </div>
             </li>
