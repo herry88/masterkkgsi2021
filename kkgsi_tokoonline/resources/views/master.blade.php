@@ -8,11 +8,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     <title>Materialart Admin Template</title>
     <!-- chartist CSS -->
-    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
-    <link href="../../dist/css/style.css" rel="stylesheet">
+    <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="dist/css/style.css" rel="stylesheet">
     <!-- This page CSS -->
-    <link href="../../dist/css/pages/dashboard1.css" rel="stylesheet">
+    <link href="dist/css/pages/dashboard1.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
