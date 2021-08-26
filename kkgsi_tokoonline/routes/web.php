@@ -20,3 +20,5 @@ Route::get('/', function () {
 // Route::get('/Belajar/{nama}', function ($nama) {
 //     return 'Sedang Bersama ' .$nama;
 // });
+//
+Route::get('master', [App\Http\Controllers\BelajarController::class, 'index']);

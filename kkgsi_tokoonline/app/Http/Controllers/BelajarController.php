@@ -13,8 +13,8 @@ class BelajarController extends Controller
      */
     public function index()
     {
-        //ini dari branch syahid
-        return '<h1>Belajar laravel</h1>';
+        //ini Branch Galuh
+        return view ('master');
     }
 
     /**
