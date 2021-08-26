@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 //bagian mastertemplate belajar
 Route::get('master',[App\Http\Controllers\BelajarController::class, 'index']);
+
+Route::resource('categories',App\Http\Controllers\CategoryController::class);
+Route::resource('sub-categories', App\Http\Controllers\SubCategoryController::class);
