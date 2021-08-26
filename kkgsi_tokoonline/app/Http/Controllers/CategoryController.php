@@ -14,8 +14,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
-        return view('admin.category.index');
+        //select * from categories;
+        $category = Category::all();
+        return view('admin.category.index',compact('category'));
     }
 
     /**
@@ -38,6 +39,11 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
+        $category = new Category(); 
+        $category->title = $request->input('title');
+        $category->description = $request->input('description');
+        $category->save();
+        return redirect()->route('categories.index');
     }
 
     /**
