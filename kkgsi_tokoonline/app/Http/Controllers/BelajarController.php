@@ -15,6 +15,14 @@ class BelajarController extends Controller
     {
         //ini dari branch syahid
         return '<h1>Belajar</h1>';
+
+
+        //ini dari branch syahid
+
+        //return view master
+        return view('master');
+
+
     }
 
     /**
