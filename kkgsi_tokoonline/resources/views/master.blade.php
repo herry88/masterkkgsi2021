@@ -8,11 +8,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     @yield('title-web')
     <!-- chartist CSS -->
-    <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
-    <link href="dist/css/style.css" rel="stylesheet">
+    <link href="{{asset('assets/libs/chartist/dist/chartist.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css')}}" rel="stylesheet">
+    <link href="{{asset('dist/css/style.css')}}" rel="stylesheet">
     <!-- This page CSS -->
-    <link href="dist/css/pages/dashboard1.css" rel="stylesheet">
+    <link href="{{asset('dist/css/pages/dashboard1.css')}}" rel="stylesheet">
  
 </head>
 
@@ -306,26 +306,26 @@
     <!-- ============================================================== -->
     <!-- All Required js -->
     <!-- ============================================================== -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="dist/js/materialize.min.js"></script>
-    <script src="assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="{{asset('assets/libs/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{asset('dist/js/materialize.min.js')}}"></script>
+    <script src="{{asset('assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js')}}"></script>
     <!-- ============================================================== -->
     <!-- Apps -->
     <!-- ============================================================== -->
-    <script src="dist/js/app.js"></script>
-    <script src="dist/js/app.init.light-sidebar.js"></script>
-    <script src="dist/js/app-style-switcher.js"></script>
+    <script src="{{asset('dist/js/app.js')}}"></script>
+    <script src="{{asset('dist/js/app.init.light-sidebar.js')}}"></script>
+    <script src="{{asset('dist/js/app-style-switcher.js')}}"></script>
     <!-- ============================================================== -->
     <!-- Custom js -->
     <!-- ============================================================== -->
-    <script src="dist/js/custom.min.js"></script>
+    <script src="{{asset('dist/js/custom.min.js')}}"></script>
     <!-- ============================================================== -->
     <!-- This page plugin js -->
     <!-- ============================================================== -->
-    <script src="assets/libs/chartist/dist/chartist.min.js"></script>
-    <script src="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
-    <script src="dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="{{asset('assets/libs/chartist/dist/chartist.min.js')}}"></script>
+    <script src="{{asset('assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js')}}"></script>
+    <script src="{{asset('assets/extra-libs/sparkline/sparkline.js')}}"></script>
+    <script src="{{asset('dist/js/pages/dashboards/dashboard1.js')}}"></script>
 </body>
 
 </html>
