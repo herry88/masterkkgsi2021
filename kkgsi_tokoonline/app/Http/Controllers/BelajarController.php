@@ -13,15 +13,12 @@ class BelajarController extends Controller
      */
     public function index()
     {
-        //ini dari branch syahid
-        return '<h1>Belajar</h1>';
-
 
         //ini dari branch syahid
 
         //return view master
         return view('master');
-
+        
 
     }
 

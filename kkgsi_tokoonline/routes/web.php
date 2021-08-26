@@ -16,17 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
-//
-// Route::get('/belajar/{nama}', function ($nama) {
-//     return 'sedangbelajar '.$nama;
-// });
-
-// Route::get('/user/{id}', function ($id) {
-//     return 'User '.$id;
-// });
-=======
 
 //bagian mastertemplate belajar
-Route::get('master',[App\Http\Controllers\BelajarController::class, 'index']);
->>>>>>> 6a633921f02aa1d6066118c9d2a80c26217b0dde
+Route::get('master', [App\Http\Controllers\BelajarController::class, 'index']);
+Route::get('arkan', [App\Http\Controllers\ArkanController::class, 'index']);
+//ini adalah route web
+Route::resource('categories', App\Http\Controllers\CategoriController::class);
+Route::resource('sub-catagories', App\Http\Controllers\SubCategoryController::class);
+Route::resource('coupon', App\Http\Controllers\CouponController::class);
+Route::resource('product',  App\Http\Controllers\ProductController::class);
+Route::resource('order', App\Http\Controllers\OrderController::class);
+Route::resource('transaksi',  App\Http\Controllers\TransactionController::class);
+Route::resource('dashboard',  App\Http\Controllers\DashboardController::class);
+
