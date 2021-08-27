@@ -23,7 +23,7 @@
                     <p class="caption"><a class="waves-effect waves-light btn btn-round indigo">Add Data</a></p>
                     <div class="row">
                         <div class="col s12">
-                            <table class="table table-bordered table-striped">
+                            <table class="table table-bordered table-striped responsive-table">
                                 <thead>
                                     <tr>
                                         <th>No</th>

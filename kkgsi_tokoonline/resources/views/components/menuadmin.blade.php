@@ -24,7 +24,7 @@
                 </div>
             </li>
             <li> <a href="#"><i class="small material-icons">code</i> Category </a></li>
-            <li><a href="#" class="material-icons"></a></li>
+            <li><a href="#"><i class="small material-icons">code</i> Product</a></li>
         </ul>
     </li>
 </ul>
