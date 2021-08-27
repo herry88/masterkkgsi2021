@@ -21,11 +21,22 @@
                 <div class="card-content">
                     <div class="row">
                         <div class="col s12">
-                            <form action="#" class="m-t-40" method="post">
-                                <table class="table">
+                            <form action="{{route('categories.store')}}" class="m-t-40" method="post">
+                                @csrf
+                                @method('POST')
+                                <table class="table table-striped">
                                     <tr>
-                                        <td>No</td>
-                                        <td><input type="text" name="#" id="name"></td>
+                                        <td>Title</td>
+                                        <td><input type="text" name="title" id="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Description</td>
+                                        <td><input type="text" name="description" id="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><button type="submit" class="waves-effect waves-light btn indigo">Save
+                                                Data</button></td>
                                     </tr>
                                 </table>
                             </form>

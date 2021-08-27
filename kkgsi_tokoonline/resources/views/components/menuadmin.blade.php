@@ -20,15 +20,10 @@
                                     class="hide-menu">SubCategory</span></a></li>
 
                     </ul>
+
                 </div>
             </li>
-
-
-
-
-
-
-
+            <li> <a href="#" class="collapsible-header"><i class="material-icons">equalizer</i> Category </a></li>
         </ul>
     </li>
 </ul>

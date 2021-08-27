@@ -19,21 +19,31 @@
             <div class="card">
                 <div class="card-content">
                     <h5 class="card-title">Data Category</h5>
-                    <p class="caption"><a href="{{route('categories.create')}}" class="waves-effect waves-light btn btn-round indigo">Add Data</a></p>
+                    <p class="caption"><a href="{{ route('categories.create') }}"
+                            class="waves-effect waves-light btn btn-round indigo">Add Data</a></p>
                     <div class="row">
                         <div class="col s12">
                             <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Tools</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>tes</td>
-                                    </tr>
+                                    @forelse ($category as $ct)
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{$ct->title}}</td>
+                                            <td>{{$ct->description}}</td>
+                                        </tr>
+                                    @empty
+                                        <tr>
+                                            <td colspan="3">Tidak Ada Data</td>
+                                        </tr>
+                                    @endforelse
                                 </tbody>
                             </table>
                         </div>
