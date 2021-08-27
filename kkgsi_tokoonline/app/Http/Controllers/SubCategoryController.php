@@ -15,11 +15,7 @@ class SubCategoryController extends Controller
     public function index()
     {
         //
-<<<<<<< HEAD
-        return view('admin.Subcategory.index');
-=======
         return view('admin.subcategory.index');
->>>>>>> 5e72877f25f3f91bf5c84a025b72ae3f38c3be53
     }
 
     /**
@@ -75,10 +71,6 @@ class SubCategoryController extends Controller
     public function update(Request $request, SubCategory $subCategory)
     {
         //
-<<<<<<< HEAD
-        return view('admin.Subcategory.index');
-=======
->>>>>>> 5e72877f25f3f91bf5c84a025b72ae3f38c3be53
     }
 
     /**

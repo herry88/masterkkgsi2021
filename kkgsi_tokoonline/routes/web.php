@@ -18,7 +18,6 @@ Route::get('/', function () {
 });
 
 //bagian mastertemplate belajar
-<<<<<<< HEAD
 Route::get('master', [App\Http\Controllers\BelajarController::class, 'index']);
 Route::get('arkan', [App\Http\Controllers\ArkanController::class, 'index']);
 //ini adalah route web
@@ -30,9 +29,3 @@ Route::resource('order', App\Http\Controllers\OrderController::class);
 Route::resource('transaksi',  App\Http\Controllers\TransactionController::class);
 Route::resource('dashboard',  App\Http\Controllers\DashboardController::class);
 
-=======
-Route::get('master',[App\Http\Controllers\BelajarController::class, 'index']);
-
-Route::resource('categories',App\Http\Controllers\CategoryController::class);
-Route::resource('sub-categories', App\Http\Controllers\SubCategoryController::class);
->>>>>>> 5e72877f25f3f91bf5c84a025b72ae3f38c3be53
