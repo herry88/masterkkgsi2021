@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SubCategory;
+use App\Models\coupon;
 use Illuminate\Http\Request;
 
-class SubCategoryController extends Controller
+class CouponController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class SubCategoryController extends Controller
      */
     public function index()
     {
- master
+        //
+        return view ('admin.coupon.index');
     }
 
     /**
@@ -41,10 +42,10 @@ class SubCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\coupon  $coupon
      * @return \Illuminate\Http\Response
      */
-    public function show(SubCategory $subCategory)
+    public function show(coupon $coupon)
     {
         //
     }
@@ -52,10 +53,10 @@ class SubCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\coupon  $coupon
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubCategory $subCategory)
+    public function edit(coupon $coupon)
     {
         //
     }
@@ -64,10 +65,10 @@ class SubCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\coupon  $coupon
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubCategory $subCategory)
+    public function update(Request $request, coupon $coupon)
     {
         //
     }
@@ -75,10 +76,10 @@ class SubCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\coupon  $coupon
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubCategory $subCategory)
+    public function destroy(coupon $coupon)
     {
         //
     }

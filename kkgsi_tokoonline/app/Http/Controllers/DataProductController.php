@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SubCategory;
+use App\Models\dataProduct;
 use Illuminate\Http\Request;
 
-class SubCategoryController extends Controller
+class DataProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class SubCategoryController extends Controller
      */
     public function index()
     {
- master
+        //
+        return view ('admin.dataProduct.index');
     }
 
     /**
@@ -41,10 +42,10 @@ class SubCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\dataProduct  $dataProduct
      * @return \Illuminate\Http\Response
      */
-    public function show(SubCategory $subCategory)
+    public function show(dataProduct $dataProduct)
     {
         //
     }
@@ -52,10 +53,10 @@ class SubCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\dataProduct  $dataProduct
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubCategory $subCategory)
+    public function edit(dataProduct $dataProduct)
     {
         //
     }
@@ -64,10 +65,10 @@ class SubCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\dataProduct  $dataProduct
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubCategory $subCategory)
+    public function update(Request $request, dataProduct $dataProduct)
     {
         //
     }
@@ -75,10 +76,10 @@ class SubCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\dataProduct  $dataProduct
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubCategory $subCategory)
+    public function destroy(dataProduct $dataProduct)
     {
         //
     }
