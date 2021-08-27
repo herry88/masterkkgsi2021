@@ -31,4 +31,3 @@ Route::resource('product', App\Http\Controllers\ProductController::class);
 Route::resource('dataProduct', App\Http\Controllers\DataProductController::class);
 Route::resource('order', App\Http\Controllers\OrderController::class);
 Route::resource('transaction', App\Http\Controllers\TransactionController::class);
-
