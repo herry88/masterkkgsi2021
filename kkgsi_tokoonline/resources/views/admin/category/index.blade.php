@@ -38,10 +38,13 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{$ct->title}}</td>
                                             <td>{{$ct->description}}</td>
+                                            <td>
+                                                <a href="#" title="edit"><i class="small material-icons" style="color:green">edit</i></a>
+                                                <a href="#" title="delete"><i class="small material-icons" style="color:red">delete</i></a></td>
                                         </tr>
                                     @empty
                                         <tr>
-                                            <td colspan="3">Tidak Ada Data</td>
+                                            <td colspan="4" class="center-align">Tidak Ada Data</td>
                                         </tr>
                                     @endforelse
                                 </tbody>
