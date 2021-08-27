@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\category;
+ master
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -14,7 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.category.index');
+ master
     }
 
     /**
@@ -25,6 +25,7 @@ class CategoryController extends Controller
     public function create()
     {
         //
+master
     }
 
     /**
@@ -36,15 +37,13 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
+ master
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function show(category $category)
+ master
     {
         //
     }
@@ -52,10 +51,7 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(category $category)
+ master
     {
         //
     }
@@ -64,10 +60,7 @@ class CategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, category $category)
+ master
     {
         //
     }
@@ -75,10 +68,7 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(category $category)
+ master
     {
         //
     }
