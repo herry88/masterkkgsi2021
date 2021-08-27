@@ -1,74 +1,51 @@
 <ul id="slide-out" class="sidenav">
                 <li>
                     <ul class="collapsible">
-                        <li class="small-cap"><span class="hide-menu">PERSONAL</span></li>
+                        <li class="small-cap"><span class="hide-menu">Menu Admin</span></li>
                         <li>
-                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">dashboard</i><span class="hide-menu"> Dashboard</span></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="index.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-1</span></a></li>
-                                    <li><a href="index2.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-2</span></a></li>
-                                    <li><a href="index3.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-3</span></a></li>
-                                    <li><a href="index4.html"><i class="material-icons">adjust</i><span class="hide-menu">Dashboard-4</span></a></li>
-                                </ul>
-                            </div>
+                            <a href="#" class="collapsible-header"><i class="material-icons">dashboard</i><span> Dashboard</span></a>
+
                         </li>
                          <li>
-                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">equalizer</i><span class="hide-menu"> Sidebar Types </span></a>
+                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">equalizer</i><span class="hide-menu"> Category </span></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="sidebar-type-minisidebar.html"><i class="material-icons">photo_size_select_small</i><span class="hide-menu">Minisidebar</span></a></li>
-                                    <li><a href="sidebar-type-iconbar.html"><i class="material-icons">picture_in_picture</i><span class="hide-menu">Icon Sidebar</span></a></li>
-                                    <li><a href="sidebar-type-overlay.html"><i class="material-icons">low_priority</i><span class="hide-menu">Overlay Sidebar</span></a></li>
-                                    <li><a href="sidebar-type-fullsidebar.html"><i class="material-icons">present_to_all</i><span class="hide-menu">Full Sidebar</span></a></li>
-                                    <li><a href="../horizontal/index.html"><i class="material-icons">power_input</i><span class="hide-menu">Horizontal Sidebar</span></a></li>
+                                    <li><a href="{{route('categories.index' )}}"><i class="material-icons">photo_size_select_small</i><span class="hide-menu">Data Category</span></a></li>
+                                    <li><a href="{{route('sub-categories.index')}}"><i class="material-icons">picture_in_picture</i><span class="hide-menu">Sub Category</span></a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">library_books</i><span class="hide-menu"> Page Layouts </span></a>
+                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">local_offer</i><span class="hide-menu">Coupon</span></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="layout-inner-fixed-left-sidebar.html"><i class="material-icons">format_align_left</i><span class="hide-menu">Inner Fixed Left Sidebar</span></a></li>
-                                    <li><a href="layout-inner-fixed-right-sidebar.html"><i class="material-icons">format_align_right</i><span class="hide-menu">Inner Fixed Right Sidebar</span></a></li>
-                                    <li><a href="layout-inner-left-sidebar.html"><i class="material-icons">format_indent_increase</i><span class="hide-menu">Inner Left Sidebar</span></a></li>
-                                    <li><a href="layout-inner-right-sidebar.html"><i class="material-icons">format_indent_decrease</i><span class="hide-menu">Inner Right Sidebar</span></a></li>
-                                    <li><a href="page-layout-fixed-header.html"><i class="material-icons">line_weight</i><span class="hide-menu">Fixed Header</span></a></li>
-                                    <li><a href="page-layout-fixed-sidebar.html"><i class="material-icons">line_weight</i><span class="hide-menu">Fixed Sidebar</span></a></li>
-                                    <li><a href="page-layout-fixed-header-sidebar.html"><i class="material-icons">format_align_center</i><span class="hide-menu">Fixed Header & Sidebar</span></a></li>
-                                    <li><a href="../boxed/index.html"><i class="material-icons">format_line_spacing</i><span class="hide-menu">Boxed Layout</span></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="small-cap"><span class="hide-menu">Apps</span></li>
-                        <li>
-                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">move_to_inbox</i><span class="hide-menu"> Inbox</span></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="inbox-email.html"><i class="material-icons">email</i><span class="hide-menu">Email</span></a></li>
-                                    <li><a href="inbox-email-detail.html"><i class="material-icons">markunread_mailbox</i><span class="hide-menu">Email Detail</span></a></li>
-                                    <li><a href="inbox-compose.html"><i class="material-icons">contact_mail</i><span class="hide-menu">Email Compose</span></a></li>
+                                    <li><a href="{{route('coupon.index')}}"><i class="material-icons">list </i></span class="hide-menu">View Coupon</span></a></li>
+                                    <li><a href="{{route('dataCoupon.index')}}"><i class="material-icons">add </i><span class="hide-menu">Data Coupon</span></a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">bookmark_border</i><span class="hide-menu"> Ticket</span></a>
+                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">shopping_cart</i><span class="hide-menu">Product</span></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="ticket-list.html"><i class="material-icons">collections_bookmark</i><span class="hide-menu">Ticket List</span></a></li>
-                                    <li><a href="ticket-detail.html"><i class="material-icons">bookmark</i><span class="hide-menu">Ticket Detail</span></a></li>
+                                    <li><a href="{{route('product.index')}}"><i class="material-icons">shop</i><span class="hide-menu">View Product</span></a></li>
+                                    <li><a href="{{route('dataProduct.index')}}"><i class="material-icons">shopping_basket</i><span class="hide-menu">Data Product</span></a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">donut_small</i><span class="hide-menu"> Extra</span></a>
+                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">add_shopping_cart</i><span class="hide-menu">Order</span></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="app-chats.html"><i class="material-icons">chat</i><span class="hide-menu">Chat Apps</span></a></li>
-                                    <li><a href="app-taskboard.html"><i class="material-icons">dvr</i><span class="hide-menu">Taskboard</span></a></li>
-                                    <li><a href="app-contact.html"><i class="material-icons">dialer_sip</i><span class="hide-menu">Contact</span></a></li>
-                                    <li><a href="app-contact2.html"><i class="material-icons">contacts</i><span class="hide-menu">Contact Grid</span></a></li>
-                                    <li><a href="app-contact-detail.html"><i class="material-icons">contact_phone</i><span class="hide-menu">Contact Detail</span></a></li>
+                                    <li><a href="{{route('order.index')}}"><i class="material-icons">shopping_cart</i><span class="hide-menu">Data Order</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="collapsible-header has-arrow"><i class="material-icons">monetization_on</i><span class="hide-menu">Transaction</span></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="{{route('transaction.index')}}"><i class="material-icons">add</i><span class="hide-menu">Data Transaction</span></a></li>
                                 </ul>
                             </div>
                         </li>

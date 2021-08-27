@@ -22,3 +22,12 @@ Route::get('/', function () {
 // });
 //
 Route::get('master', [App\Http\Controllers\BelajarController::class, 'index']);
+
+Route::resource('categories',App\Http\Controllers\CategoryController::class);
+Route::resource('sub-categories', App\Http\Controllers\SubCategoryController::class);
+Route::resource('coupon', App\Http\Controllers\CouponController::class);
+Route::resource('dataCoupon', App\Http\Controllers\DataCouponController::class);
+Route::resource('product', App\Http\Controllers\ProductController::class);
+Route::resource('dataProduct', App\Http\Controllers\DataProductController::class);
+Route::resource('order', App\Http\Controllers\OrderController::class);
+Route::resource('transaction', App\Http\Controllers\TransactionController::class);
