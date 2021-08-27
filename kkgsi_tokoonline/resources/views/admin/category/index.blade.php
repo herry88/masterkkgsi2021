@@ -36,11 +36,14 @@
                                     @forelse ($category as $ct)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
-                                            <td>{{$ct->title}}</td>
-                                            <td>{{$ct->description}}</td>
+                                            <td>{{ $ct->title }}</td>
+                                            <td>{{ $ct->description }}</td>
                                             <td>
-                                                <a href="#" title="edit"><i class="small material-icons" style="color:green">edit</i></a>
-                                                <a href="#" title="delete"><i class="small material-icons" style="color:red">delete</i></a></td>
+                                                <a href="#" title="edit"><i class="small material-icons"
+                                                        style="color:green">edit</i></a>
+                                                <a href="#" title="delete"><i class="small material-icons"
+                                                        style="color:red">delete</i></a>
+                                            </td>
                                         </tr>
                                     @empty
                                         <tr>

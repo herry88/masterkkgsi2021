@@ -24,7 +24,7 @@
         <div class="preloader">
             <div class="loader">
                 <div class="loader__figure"></div>
-                <p class="loader__label">Material Admin</p>
+                <p class="loader__label">KKGSI 2021</p>
             </div>
         </div>
         <!-- ============================================================== -->
