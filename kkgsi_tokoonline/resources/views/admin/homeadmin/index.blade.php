@@ -1,4 +1,3 @@
-</div>
 <div class="row">
     <div class="col l3 m6 s12">
         <div class="card danger-gradient card-hover">
@@ -47,7 +46,6 @@
             </div>
         </div>
     </div>
-
     <div class="col l3 m6 s12">
         <div class="card warning-gradient card-hover">
             <div class="card-content">
