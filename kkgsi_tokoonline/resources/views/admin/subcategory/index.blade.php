@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('title-web')
-    <title>Halaman Sub Category</title>
+    <title>Halaman Sub Catagory</title>
 @endsection
 
 @section('content-title')
@@ -28,21 +28,21 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
+                                        <th>Description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>tes</td>
+                                        <td>test</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 @endsection

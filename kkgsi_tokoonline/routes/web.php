@@ -26,6 +26,6 @@ Route::resource('sub-catagories', App\Http\Controllers\SubCategoryController::cl
 Route::resource('coupon', App\Http\Controllers\CouponController::class);
 Route::resource('product',  App\Http\Controllers\ProductController::class);
 Route::resource('order', App\Http\Controllers\OrderController::class);
-Route::resource('transaksi',  App\Http\Controllers\TransactionController::class);
 Route::resource('dashboard',  App\Http\Controllers\DashboardController::class);
+Route::resource('transaksi',  App\Http\Controllers\TransactionController::class);
 
