@@ -13,7 +13,7 @@
         </div>
     </div>
 @endsection
-{{-- @section('content')
+@section('content')
     <div class="row">
         <div class="col s12">
             <div class="card">
@@ -54,4 +54,4 @@
         </div>
     </div>
 
-@endsection --}}
+@endsection

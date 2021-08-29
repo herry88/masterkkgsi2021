@@ -25,7 +25,7 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    { 
         //
         return view('admin.category.create');
     }
@@ -39,7 +39,7 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
-        $category = new Category(); 
+        $category = new Category();
         $category->title = $request->input('title');
         $category->description = $request->input('description');
         $category->save();

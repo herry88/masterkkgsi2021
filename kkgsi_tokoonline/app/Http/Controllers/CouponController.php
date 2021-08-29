@@ -15,7 +15,8 @@ class CouponController extends Controller
     public function index()
     {
         //
-        return view('admin.coupon.index');
+        $coupon = Coupon::all();
+        return view('admin.coupon.index',compact('coupon'));
     }
 
     /**
@@ -26,6 +27,7 @@ class CouponController extends Controller
     public function create()
     {
         //
+        return view('admin.coupon.create');
     }
 
     /**
@@ -37,6 +39,11 @@ class CouponController extends Controller
     public function store(Request $request)
     {
         //
+        $coupon = new coupon();
+        $coupon->title = $request->input('title');
+        $coupon->description = $request->input('description');
+        $coupon->save();
+        return redirect()->route('coupon.index');
     }
 
     /**

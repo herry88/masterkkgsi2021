@@ -3,9 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use phpDocumentor\Reflection\Types\Nullable;
 
-class CreateCategorisTable extends Migration
+class CreateProductdatasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,10 +13,8 @@ class CreateCategorisTable extends Migration
      */
     public function up()
     {
-        Schema::create('categoris', function (Blueprint $table) {
+        Schema::create('productdatas', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->Nullable();
-            $table->longText('description')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ class CreateCategorisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categoris');
+        Schema::dropIfExists('productdatas');
     }
 }

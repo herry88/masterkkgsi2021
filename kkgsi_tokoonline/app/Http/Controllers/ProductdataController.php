@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categori;
+use App\Models\Productdata;
 use Illuminate\Http\Request;
 
-class CategoriController extends Controller
+class ProductdataController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class CategoriController extends Controller
     public function index()
     {
         //
-        return view('admin.category.index');
+        return view('admin.product.data');
     }
 
     /**
@@ -26,7 +26,6 @@ class CategoriController extends Controller
     public function create()
     {
         //
-
     }
 
     /**
@@ -43,10 +42,10 @@ class CategoriController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Categori  $categori
+     * @param  \App\Models\Productdata  $productdata
      * @return \Illuminate\Http\Response
      */
-    public function show(Categori $categori)
+    public function show(Productdata $productdata)
     {
         //
     }
@@ -54,10 +53,10 @@ class CategoriController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Categori  $categori
+     * @param  \App\Models\Productdata  $productdata
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categori $categori)
+    public function edit(Productdata $productdata)
     {
         //
     }
@@ -66,10 +65,10 @@ class CategoriController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Categori  $categori
+     * @param  \App\Models\Productdata  $productdata
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Categori $categori)
+    public function update(Request $request, Productdata $productdata)
     {
         //
     }
@@ -77,10 +76,10 @@ class CategoriController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Categori  $categori
+     * @param  \App\Models\Productdata  $productdata
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categori $categori)
+    public function destroy(Productdata $productdata)
     {
         //
     }

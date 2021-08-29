@@ -20,7 +20,7 @@
                 <div class="collapsible-body">
                     <ul>
                         <li><a href="{{route('coupon.index')}}"><i class="material-icons">list </i></span class="hide-menu">View Coupon</span></a></li>
-                        <li><a href="#"><i class="material-icons">add </i><span class="hide-menu">Data Coupon</span></a></li>
+                        <li><a href="{{route('datacoupon.index')}}"><i class="material-icons">add </i><span class="hide-menu">Data Coupon</span></a></li>
                     </ul>
                 </div>
             </li>
@@ -29,7 +29,7 @@
                 <div class="collapsible-body">
                     <ul>
                         <li><a href="{{route('product.index')}}"><i class="material-icons">shop</i><span class="hide-menu">View Product</span></a></li>
-                        <li><a href="#"><i class="material-icons">shopping_basket</i><span class="hide-menu">Data Product</span></a></li>
+                        <li><a href="{{route('dataproduct.index')}}"><i class="material-icons">shopping_basket</i><span class="hide-menu">Data Product</span></a></li>
                     </ul>
                 </div>
             </li>
