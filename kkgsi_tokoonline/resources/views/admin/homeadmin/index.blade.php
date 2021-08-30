@@ -30,8 +30,8 @@
             </div>
         </div>
     </div>
-     
-    
+
+
     <div class="col l3 m6 s12">
         <div class="card success-gradient card-hover">
             <div class="card-content">
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class="col l3 m6 s12">
         <div class="card warning-gradient card-hover">
             <div class="card-content">

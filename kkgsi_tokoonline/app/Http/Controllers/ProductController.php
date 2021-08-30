@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
- master
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -15,7 +14,7 @@ class ProductController extends Controller
     public function index()
     {
         //
- master
+
     }
 
     /**
@@ -38,11 +37,13 @@ class ProductController extends Controller
     {
         //
     }
-
     /**
      * Display the specified resource.
      *
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
     {
         //
     }
@@ -50,7 +51,10 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
     {
         //
     }
@@ -59,7 +63,10 @@ class ProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
     {
         //
     }
@@ -67,8 +74,12 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
     {
         //
     }
 }
+

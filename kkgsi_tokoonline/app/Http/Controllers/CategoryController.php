@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
- master
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -14,7 +13,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
- master
+
     }
 
     /**
@@ -25,7 +24,7 @@ class CategoryController extends Controller
     public function create()
     {
         //
-master
+
     }
 
     /**
@@ -37,13 +36,14 @@ master
     public function store(Request $request)
     {
         //
- master
     }
-
     /**
      * Display the specified resource.
      *
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
     {
         //
     }
@@ -51,7 +51,10 @@ master
     /**
      * Show the form for editing the specified resource.
      *
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
     {
         //
     }
@@ -60,7 +63,10 @@ master
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
     {
         //
     }
@@ -68,7 +74,10 @@ master
     /**
      * Remove the specified resource from storage.
      *
- master
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
     {
         //
     }
