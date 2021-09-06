@@ -21,24 +21,43 @@
                 <div class="card-content">
                     <div class="row">
                         <div class="col s12">
-                            <form action="{{route('categories.store')}}" class="m-t-40" method="post">
+                            <form action="{{ route('categories.store') }}" class="m-t-40 h-form" method="post">
                                 @csrf
                                 @method('POST')
-                                <table class="table table-striped">
-                                    <tr>
-                                        <td>Title</td>
-                                        <td><input type="text" name="title" id="name"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Description</td>
-                                        <td><input type="text" name="description" id="name"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td><button type="submit" class="waves-effect waves-light btn indigo">Save
-                                                Data</button></td>
-                                    </tr>
-                                </table>
+                                <div class="form-body">
+                                    <div class="divider"></div>
+                                    <div class="card-content">
+                                        <h6 class="font-medium">Add Category</h6>
+                                        <div class="row">
+                                            <div class="col s3">
+                                                <div class="h-form-label">
+                                                    <label for="f-nameh">Title Category</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-field col s9">
+                                                <input type="text" name="title" placeholder="Title Category">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s3">
+                                                <div class="h-form-label">
+                                                    <label for="l-description">Description</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-field col s9">
+                                                <input type="text" name="description" id="" placeholder="description">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="h-form-label">
+                                                <label for=""></label>
+                                            </div>
+                                            <div class="input-field col s9">
+                                                <button type="submit" class="waves-effect waves-light btn blue">Save Data</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
 
