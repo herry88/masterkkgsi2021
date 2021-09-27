@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-import 'views/login_page.dart';
+import 'views/auth/login_page.dart';
+import 'views/auth/register_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Login(),
+      body: RegisterPage(),
     );
   }
 }

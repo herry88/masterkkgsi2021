@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:kkgsiproject/constanta/app_theme.dart';
 
 class Login extends StatefulWidget {
   const Login({Key key}) : super(key: key);
@@ -11,11 +12,12 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  CustomAppTheme customAppTheme;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.white,
+        color: customAppTheme.bgLayer1,
         child: ListView(
           padding: const EdgeInsets.only(
             top: 20.0,
