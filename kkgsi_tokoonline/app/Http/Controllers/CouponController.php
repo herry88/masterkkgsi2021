@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
- master
+use App\Models\coupon;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class CouponController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
- master
+        //
+        return view ('admin.coupon.index');
     }
 
     /**
@@ -25,7 +26,6 @@ class CategoryController extends Controller
     public function create()
     {
         //
-master
     }
 
     /**
@@ -37,13 +37,15 @@ master
     public function store(Request $request)
     {
         //
- master
     }
 
     /**
      * Display the specified resource.
      *
- master
+     * @param  \App\Models\coupon  $coupon
+     * @return \Illuminate\Http\Response
+     */
+    public function show(coupon $coupon)
     {
         //
     }
@@ -51,7 +53,10 @@ master
     /**
      * Show the form for editing the specified resource.
      *
- master
+     * @param  \App\Models\coupon  $coupon
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(coupon $coupon)
     {
         //
     }
@@ -60,7 +65,10 @@ master
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
- master
+     * @param  \App\Models\coupon  $coupon
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, coupon $coupon)
     {
         //
     }
@@ -68,7 +76,10 @@ master
     /**
      * Remove the specified resource from storage.
      *
- master
+     * @param  \App\Models\coupon  $coupon
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(coupon $coupon)
     {
         //
     }

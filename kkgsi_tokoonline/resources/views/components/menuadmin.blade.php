@@ -1,10 +1,5 @@
 <ul id="slide-out" class="sidenav">
-    <li>
-        <ul class="collapsible">
-            <li class="small-cap"><span class="hide-menu">Menu Admin</span></li>
-            <li>
-                <a href="#" class="collapsible-header"><i class="material-icons">dashboard</i><span>
-                        Dashboard</span></a>
+
 
             </li>
             <li>
@@ -28,3 +23,4 @@
         </ul>
     </li>
 </ul>
+

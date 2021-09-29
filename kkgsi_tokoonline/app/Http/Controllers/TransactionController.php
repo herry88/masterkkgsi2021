@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
- master
+use App\Models\transaction;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class TransactionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
- master
+        //
+        return view ('admin.transaction.index');
     }
 
     /**
@@ -25,7 +26,6 @@ class CategoryController extends Controller
     public function create()
     {
         //
-master
     }
 
     /**
@@ -37,13 +37,15 @@ master
     public function store(Request $request)
     {
         //
- master
     }
 
     /**
      * Display the specified resource.
      *
- master
+     * @param  \App\Models\transaction  $transaction
+     * @return \Illuminate\Http\Response
+     */
+    public function show(transaction $transaction)
     {
         //
     }
@@ -51,7 +53,10 @@ master
     /**
      * Show the form for editing the specified resource.
      *
- master
+     * @param  \App\Models\transaction  $transaction
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(transaction $transaction)
     {
         //
     }
@@ -60,7 +65,10 @@ master
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
- master
+     * @param  \App\Models\transaction  $transaction
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, transaction $transaction)
     {
         //
     }
@@ -68,7 +76,10 @@ master
     /**
      * Remove the specified resource from storage.
      *
- master
+     * @param  \App\Models\transaction  $transaction
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(transaction $transaction)
     {
         //
     }
