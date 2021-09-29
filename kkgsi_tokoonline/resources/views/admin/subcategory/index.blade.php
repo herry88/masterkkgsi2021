@@ -19,22 +19,39 @@
         <div class="col s12">
             <div class="card">
                 <div class="card-content">
-                    <h5 class="card-title">Data Category</h5>
+                    <h5 class="card-title">Data Sub Category</h5>
                     <p class="caption"><a class="waves-effect waves-light btn btn-round indigo">Add Data</a></p>
                     <div class="row">
                         <div class="col s12">
-                            <table class="table table-bordered table-striped">
+                            <table class="table table-bordered table-striped responsive-table">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Category</th>
+                                        <th>Tools</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>tes</td>
-                                    </tr>
+                                    @forelse ($sub_category as $sc)
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $sc->title }}</td>
+                                            <td>{{ $sc->description }}</td>
+                                            <td>{{ $sc->category_id }}</td>
+                                            <td><a href="#"><i class="small material-icons">edit</i></a>
+                                                <a href="#"><i class="small material-icons">delete</i></a>
+                                            </td>
+                                        </tr>
+
+
+                                    @empty
+                                        <tr>
+                                            <td colspan="5" class="center-align">Tidak Ada Data</td>
+                                        </tr>
+
+                                    @endforelse
                                 </tbody>
                             </table>
                         </div>
