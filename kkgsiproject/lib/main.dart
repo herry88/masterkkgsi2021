@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
+import 'package:kkgsiproject/appthemenotifier.dart';
+import 'package:provider/provider.dart';
 
 import 'views/auth/login_page.dart';
 import 'views/auth/register_page.dart';
 
-void main() {
-  runApp(MyApp());
+
+Future<void> main() async {
+  //kita butuh initialize 
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((_) async{
+    // String langCode = await AllLanguage.getLanguage();
+    runApp(ChangeNotifierProvider<AppThemeNotifier>(
+      create: (context) => AppThemeNotifier(),
+      child: MyApp()
+    ));
+  });
+  
 }
 
 class MyApp extends StatelessWidget {
