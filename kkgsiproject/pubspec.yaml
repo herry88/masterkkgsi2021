@@ -21,9 +21,11 @@ environment:
   sdk: ">=2.11.0 <3.0.0"
 
 dependencies:
+  connectivity: ^3.0.6
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  google_fonts: ^2.1.0
   http: ^0.13.3
   
 

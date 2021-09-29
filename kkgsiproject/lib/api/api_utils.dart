@@ -7,7 +7,7 @@ class ApiUtil{
   static const String IP_ADDRESS = "skielstore.herryprasetyo.my.id";
   static const String DefaultPage = "rest/bootstrap";
   static const String BASE_URL = "https://" + IP_ADDRESS + "/" + DefaultPage;
-
+  static const String RegisterPage = "rest/register";
   //response 200,400,500
   
   
