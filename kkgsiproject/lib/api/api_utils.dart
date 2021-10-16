@@ -8,10 +8,16 @@ class ApiUtil {
   static const String DefaultPage = "rest/bootstrap";
   static const String BASE_URL = "https://" + IP_ADDRESS + "/" + DefaultPage;
 
+  static const String MAIN_API_URL_DEV = BASE_URL;
+
+  //url production 
+  static const String MAIN_API_URL = MAIN_API_URL_DEV;
+
   static const String RegisterPage = "rest/register";
 
   static const String CategoryProduct = "/rest/categoryProducts";
-
+  //login 
+  static const String AUTH_LOGIN = 'rest/login';
   //response 200, 404, 500
   static const int SUCCESS_CODE = 200;
   static const int ERROR_CODE = 400;
