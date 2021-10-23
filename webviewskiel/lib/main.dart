@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "/": (_) => const WebviewScaffold(
-              url: "https://shashankpujari.com",
+              url: "https://skielstore.herryprasetyo.my.id/",
             ) // WebviewScaffold
       },
     );
