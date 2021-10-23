@@ -46,12 +46,12 @@ class ApiUtil {
         return {
           "Accept": "application/json",
           "Content-type": "application/json",
-          "Authorization": "Bearer " + token
+          // "Authorization": "Bearer " + token
         };
       case RequestType.GetWithAuth:
         return {
           "Accept": "application/json",
-          "Authorization": "Bearer " + token
+          // "Authorization": "Bearer " + token
         };
     }
     //Not reachable
