@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:kkgsiproject/appthemenotifier.dart';
 import 'package:provider/provider.dart';
 
+import 'apptheme.dart';
 import 'views/auth/login_page.dart';
 import 'views/auth/register_page.dart';
 
@@ -22,18 +23,24 @@ Future<void> main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyHomePage(),
+    return Consumer<AppThemeNotifier>(
+      builder: (BuildContext context, AppThemeNotifier value, Widget child){
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: AppTheme.getThemeFromThemeMode(value.themeMode()),
+          home: MyHomePage(),
+        );
+      },
+      
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key key}) : super(key: key);
+  MyHomePage({Key key}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();

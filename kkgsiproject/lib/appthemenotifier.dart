@@ -18,6 +18,8 @@ class AppThemeNotifier extends ChangeNotifier {
     notifyListeners();
   }
 
+  themeMode() => _themeMode;
+
   notify() {
     notifyListeners();
   }
