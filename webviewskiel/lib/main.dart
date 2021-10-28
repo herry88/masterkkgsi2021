@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:webviewskiel/pages/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      routes: {
-        "/": (_) => const WebviewScaffold(
-              url: "https://skielstore.herryprasetyo.my.id/",
-            ) // WebviewScaffold
-      },
+    return const MaterialApp(
+      home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
