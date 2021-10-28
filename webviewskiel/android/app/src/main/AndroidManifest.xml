@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.webviewskiel">
+    package="com.kkgsiherry.webviewskiel">
    <application
-        android:label="webviewskiel"
+        android:label="SkielStore"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
