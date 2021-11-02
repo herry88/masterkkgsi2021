@@ -1,4 +1,4 @@
-package com.example.webviewskiel
+package com.kkgsiherry.webviewskiel
 
 import io.flutter.embedding.android.FlutterActivity
 
