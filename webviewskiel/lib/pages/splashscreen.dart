@@ -1,8 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({ Key key }) : super(key: key);
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -10,14 +12,15 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      routes: {
-        "/": (_) =>  const WebviewScaffold(
-              url: "https://skielstore.herryprasetyo.my.id/",
-            ) // WebviewScaffold
-      },
-    );
+  void initState() {
+    super.initState();
+    if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
+  }
 
+  @override
+  Widget build(BuildContext context) {
+    return const WebView(
+      initialUrl: 'https://skielstore.herryprasetyo.my.id/',
+    );
   }
 }
